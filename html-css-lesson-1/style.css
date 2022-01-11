@@ -88,3 +88,19 @@ html {
 .paragraph_last {
 	margin-bottom: 3rem;
 }
+ .avatar__picture:hover {
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+			transition:         transform .8s ease-in-out;
+	-webkit-transform: rotate(360deg);
+	border-radius: 50%;
+	border:1rem solid rgb(141, 165, 97);
+}
+
+.contacts__name:hover {
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+			transition:         transform .8s ease-in-out;
+			-webkit-transform: translateY(-50%);
+            transform: translateY(-50%);	
+	font-size: 5rem;
+	color: rgb(141, 165, 97);
+}
