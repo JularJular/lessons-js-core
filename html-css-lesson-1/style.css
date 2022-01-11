@@ -1,77 +1,90 @@
 body,
 html {
 	width: 100%;
-	background: rgb(0,255,250);
 	background: linear-gradient(15deg, rgba(0,255,250,0.1) 0%, rgba(217,255,142,0.2) 37%, rgba(214,255,154,0.3) 57%, rgba(0,184,63,0.3) 91%);
-	font-size: 16px;
-	border: #000;
+	font-size: 1rem;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .person {
-	/* добавьте ваш код  */
 	display: flex;
 	flex-wrap: wrap;
+	width: 60%;
+	margin: 0 auto;
 }
+
 .person__info {
-	/* добавьте ваш код*/
-	display:inline-flex;
+	flex: 1 0 50%;
+	padding-top: 2rem;
+	padding-bottom: 2rem ;
+	padding-left: 2rem;
+	padding-right: 1rem;
 }
+
 .person__contacts {
-	/* добавьте ваш код  */
-	display:inline-flex;
-	align-self: center;
+	flex: 1 0 50%;
+	padding-top: 2rem;
+	padding-bottom: 2rem ;
+	padding-left: 1rem;
+	padding-right: 2rem;
 }
+
 .person__details {
-	/* добавьте ваш код  */
+	flex: 1 0 50%;
 }
+
 .avatar {
-	/* добавьте ваш код */
-	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
 	overflow: hidden;
-	width: 400px;
-	height: 400px;
-	border:32px solid white;
-	margin-top: 32px;
-	margin-bottom: 32px;
-	margin-left: 32px;
-	margin-right: 32px;
+	width: 100%;
+
 }
+
 .avatar__picture {
-	/* добавьте ваш код  */
+	border:2rem solid white;
+	border-radius: 50%;
 }
+
 .contacts {
-	/* добавьте ваш код  */
-	display: inline-block;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
 }	
+
 .contacts__name {
-	/* добавьте ваш код  */
-	font-size: 32px;
+	font-size: 2rem;
+	font-weight: bold;
 }
+
 .contacts__role {
-	/* добавьте ваш код  */
-	font-size: 19.2px;
+	margin-bottom: 2rem;
+	font-size: 1.2rem;
+    font-weight: bold;
 }
+/*
 .contacts__item {
-	/* добавьте ваш код  */
 }
+*/
 .contacts__title {
-	/* добавьте ваш код  */
+	font-weight: bold;
 }
+/*
 .contacts__title:after {
-	/* добавьте ваш код  */
 }
+*/
 .contacts__link {
-	/* добавьте ваш код  */
 	color: gray;
 }
+
 .paragraph {
-	/* добавьте ваш код  */
-	margin-bottom: 16px;
-	margin-left: 32px;
-	margin-right: 32px;
-	font-size: 16px;
+	margin-bottom: 1rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	font-size: 1rem;
 }
+
 .paragraph_last {
-	/* добавьте ваш код  */
-	margin-bottom: 48px;
+	margin-bottom: 3rem;
 }
