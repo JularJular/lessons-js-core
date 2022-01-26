@@ -1,7 +1,7 @@
 body,
 html {
 	width: 100%;
-	background: linear-gradient(15deg, rgba(0,255,250,0.1) 0%, rgba(217,255,142,0.2) 37%, rgba(214,255,154,0.3) 57%, rgba(0,184,63,0.3) 91%);
+	background: linear-gradient(15deg, #ff7b0004 10%, rgba(37, 28, 3, 0.2) 37%, rgba(214,255,154,0.3) 57%, #919b094d 91%);
 	font-size: 1rem;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -38,12 +38,12 @@ html {
 	flex-direction: column;
 	overflow: hidden;
 	width: 100%;
-
 }
 
 .avatar__picture {
 	border:2rem solid white;
 	border-radius: 50%;
+    transition: transform 1s;
 }
 
 .contacts {
@@ -56,6 +56,7 @@ html {
 .contacts__name {
 	font-size: 2rem;
 	font-weight: bold;
+	transition: transform 1s;
 }
 
 .contacts__role {
@@ -88,17 +89,21 @@ html {
 .paragraph_last {
 	margin-bottom: 3rem;
 }
- .avatar__picture:hover {
-	-webkit-transition: -webkit-transform .8s ease-in-out;
-	-webkit-transform: rotate(360deg);
+
+.avatar__picture:hover {
 	border-radius: 50%;
 	border:1rem solid rgb(141, 165, 97);
-}
+	transform: rotate(360deg);
+	
+} 
 
 .contacts__name:hover {
-	-webkit-transition: -webkit-transform .8s ease-in-out;
-	-webkit-transform: translateY(-50%);
-  
-	font-size: 5rem;
-	color: rgb(141, 165, 97);
+	filter: none;
+ 	color: rgb(141, 165, 97);
+	transform: rotate(360deg);
+}
+
+.contacts__name:hover + div {
+	filter: blur(8px);
+ 	color: rgb(141, 165, 97);
 }
